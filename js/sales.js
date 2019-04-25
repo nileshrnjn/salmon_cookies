@@ -1,39 +1,17 @@
 'use strict';
 
-var firstandpike = {
-  name :'1st and Pike',
-  minNumCust: 23,
-  maxNumCust: 65,
-  avgCookieSale: 6.3
-};
+function CookieData(storeName,minCust,maxCust,avgCookieSale){
+  this.storeName = storeName;
+  this.minCust = minCust;
+  this.maxCust = maxCust;
+  this.avgCookieSale = avgCookieSale;
+}
 
-var seatac = {
-  name :'SeaTac Airport',
-  minNumCust : 3,
-  maxNumCust : 24,
-  avgCookieSale : 1.2
-};
-
-var seattlecenter = {
-  name :'Seattle Center',
-  minNumCust : 11,
-  maxNumCust : 38,
-  avgCookieSale : 3.7
-};
-
-var capitolhill= {
-  name :'Capitol Hill',
-  minNumCust : 20,
-  maxNumCust : 38,
-  avgCookieSale : 2.3
-};
-
-var alki = {
-  name :'Alki',
-  minNumCust : 2,
-  maxNumCust : 16,
-  avgCookieSale : 4.6
-};
+var firstandpike = new CookieData('1st and Pike',23,65,6.3);
+var seatac = new CookieData('SeaTac Airport',3,24,1.2);
+var seattlecenter = new CookieData('Seattle Center',11,38,3.7);
+var capitolhill = new CookieData('Capitol Hill',20,38,2.3);
+var alki = new CookieData('Alki',2,16,4.6);
 
 var stores = [firstandpike, seatac, seattlecenter, capitolhill, alki];
 
@@ -49,30 +27,33 @@ while (storeCount < stores.length) {
 
   var liEl = document.createElement('li');
 
-  liEl.textContent = 'Store Name : ' + stores[storeCount].name;
+  liEl.textContent = 'Store Name : ' + stores[storeCount].storeName;
   StoreList.appendChild(liEl);
 
   for (var i = 6; i <= 21; i++) {
     if (i < 12) {
-      storetime = i + ' am'; }
+      storetime = i + ' AM'; }
     else if (i===12) {
-      storetime = i + ' pm';
+      storetime = i + ' PM';
     }
     else if (i > 12) {
-      storetime = (i-12) + ' pm';
+      storetime = (i-12) + ' PM';
     }
 
 
     liEl = document.createElement('li');
 
-    numCust = getCustCount(stores[storeCount].minNumCust,stores[storeCount].maxNumCust);
+    numCust = getCustCount(stores[storeCount].minCust,stores[storeCount].maxCust);
+    console.log('numCust:' + numCust);
     numCookies = Math.ceil(numCust * stores[storeCount].avgCookieSale);
+    console.log('numCookies:' + numCookies);
     liEl.textContent = storetime + ': ' + numCookies + ' Cookies' ;
 
 
     StoreList.appendChild(liEl);
-
+    console.log('numCookies:' + numCookies);
     totCookies = totCookies + numCookies;
+    console.log('totCookies:' + totCookies);
   }
 
   liEl.textContent = 'Total : ' + totCookies + ' Cookies';
@@ -84,7 +65,6 @@ while (storeCount < stores.length) {
 function getCustCount(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
+  console.log('test:' + Math.floor(Math.random() * (max - min)) + min);
   return Math.floor(Math.random() * (max - min)) + min;
 }
-
-
