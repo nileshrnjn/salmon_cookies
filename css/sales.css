@@ -1,0 +1,161 @@
+body {
+  font-family: helvetica;
+}
+
+/* base styles */
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* site styles */
+
+header {
+  /* position: fixed; */
+  background: none;
+  color: black;
+  height: 80px;
+  font-weight: bold;
+  text-shadow: 10px 10px 10px;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+header section {
+  width: 960px;
+  margin: 0 auto;
+}
+
+header img {
+  float: left;
+  margin-right: 50px;
+  margin-top: 15px;
+}
+
+header nav {
+  text-align: center;
+}
+
+header nav li {
+  display: inline-block;
+  margin-right: 30px;
+  margin-left: none;
+  margin-top: 45px;
+  padding-right: 40px;
+}
+
+header nav a {
+  color: gray;
+  text-shadow: 5px 5px 5px;
+}
+
+header nav a:hover {
+  color: red;
+}
+
+
+
+main {
+  width: 960px;
+  margin: 20px auto;
+}
+
+.sub-banners li {
+  float: left;
+  margin: 30px 30px 30px 0;
+}
+
+.sub-banners li:nth-child(3) {
+  margin-right: 0;
+}
+
+.left {
+  float: left;
+  margin-right: 30px;
+}
+
+h2 {
+  padding-top: 50px;
+  padding-left: 500px;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+  font-weight: bold;
+  position: fixed;
+}
+
+.right h2 {
+  font-size: 26px;
+  text-transform: capitalize;
+  text-decoration: underline;
+  margin-bottom: 5px;
+}
+
+.right p {
+  line-height: 26px;
+  height: 275px;
+  overflow: auto;
+}
+
+.right button {
+  border: none;
+  padding: 5px 10px;
+  background: #000;
+  color: #fff;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+footer {
+  background: #444;
+  height: 150px;
+  margin-top: 30px;
+}
+
+#store-list {
+  margin: 100px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-collapse: collapse;
+  clear: both;
+  color: black;
+  padding: 10px;
+  position: fixed;
+}
+
+#store-list td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#store-list tr {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#store-list th{
+  border: 1px solid black;
+  padding: 10px;
+}
+
+#store-list tr:nth-child(even){
+  background-color: rgba(50, 95, 163, 0.432);
+  padding: 10px;
+}
+
+#store-list tr:nth-child(odd){
+  background-color:white;
+  padding: 10px;
+}
+
+#store-list tr:first-child{
+  background-color: gray;
+  font-weight: bold;
+  color: black;
+  padding: 10px;
+}
+
+#store-list tr:last-child{
+  background-color:lightgrey;
+  color: black;
+  padding: 10px;
+}
