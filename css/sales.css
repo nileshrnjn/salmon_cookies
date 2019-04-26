@@ -107,9 +107,15 @@ h2 {
 }
 
 footer {
-  background: #444;
-  height: 150px;
+  background: whitesmoke;
+  align-content: center;
+  height: 30px;
+  padding-top: 10px;
   margin-top: 30px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 #store-list {

@@ -1,17 +1,17 @@
 body {
     font-family: helvetica;
-}
-
-/* base styles */
-
-a {
+  }
+  
+  /* base styles */
+  
+  a {
     text-decoration: none;
     color: #fff;
-}
-
-/* site styles */
-
-header {
+  }
+  
+  /* site styles */
+  
+  header {
     /* position: fixed; */
     background: none;
     color: black;
@@ -20,83 +20,93 @@ header {
     text-shadow: 10px 10px 10px;
     text-align: center;
     padding: 20px 20px;
-}
-
-header section {
+  }
+  
+  header section {
     width: 960px;
     margin: 0 auto;
-}
-
-header img {
+  }
+  
+  header img {
     float: left;
     margin-right: 50px;
     margin-top: 15px;
-}
-
-header nav {
+  }
+  
+  header nav {
     text-align: center;
-}
-
-header nav li {
+  }
+  
+  header nav li {
     display: inline-block;
     margin-right: 30px;
     margin-left: none;
     margin-top: 45px;
     padding-right: 40px;
-}
-
-header nav a {
+  }
+  
+  header nav a {
     color: gray;
     text-shadow: 5px 5px 5px;
-}
-
-header nav a:hover {
+  }
+  
+  header nav a:hover {
     color: red;
   }
   
-main {
+  
+  
+  main {
     width: 960px;
     margin: 20px auto;
-}
-
-.sub-banners li {
+  }
+  
+  .sub-banners li {
     float: left;
     margin: 30px 30px 30px 0;
-}
-
-.sub-banners li:nth-child(3) {
+  }
+  
+  .sub-banners li:nth-child(3) {
     margin-right: 0;
-}
-
-.left {
+  }
+  
+  .left {
     float: left;
     margin-right: 30px;
-}
-
-.right h2 {
+  }
+  
+  h2 {
+    padding-top: 50px;
+    padding-left: 500px;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .right h2 {
     font-size: 26px;
     text-transform: capitalize;
     text-decoration: underline;
     margin-bottom: 5px;
-}
-
-.right p {
+  }
+  
+  .right p {
     line-height: 26px;
-    height: 180px;
+    height: 275px;
     overflow: auto;
-}
-
-.right button {
+  }
+  
+  .right button {
     border: none;
     padding: 5px 10px;
     background: #000;
     color: #fff;
     border-radius: 3px;
     margin-top: 10px;
-    margin-bottom: 50px;
-}
-
-footer {
+  }
+  
+  footer {
     background: whitesmoke;
     align-content: center;
     height: 30px;
@@ -108,35 +118,20 @@ footer {
     width: 100%;
 }
 
-.banners  {
-    margin-right: 30px;
-    margin-top: 120px;
-  }
+ .store {
+     margin-top: 80px;
+     margin-right: 20px;
+ }
+ .items li {
+    float: left;
+    border: 1px solid black;
+    margin: 30px 30px 30px 0;
+ }
 
-.contact {
-    margin-left: 550px;
-    margin-top: 50px;
-    width: 20px;
-    /* margin: 20px auto; */
-    opacity: 1;
-  }
-
-  .contact {
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  .contact h2 {
-    font-size: 40px;
-    font-family: "PT Sans", sans-serif;
-    margin: 20pt;
-  }
-  .contact li {
-    float: right;
-    padding: 20pt;
-  }
-  
-  .map {
-    opacity: 1.5;
-  }
-  
+ .items li:nth-child(3) {
+    margin-right: 0;
+ }
+ 
+ h2 {
+     margin-left: 80px;
+ }
